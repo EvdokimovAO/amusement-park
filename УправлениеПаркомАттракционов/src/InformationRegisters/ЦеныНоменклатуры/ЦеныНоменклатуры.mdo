@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c67e9a62-2596-431d-8989-a328b0183d1e">
+  <producedTypes>
+    <selectionType typeId="f67abc20-d684-4e6d-9628-ee8c28149bb9" valueTypeId="f964ee20-ed6b-41c5-8615-c7d2f0b96cda"/>
+    <listType typeId="b5e23b7a-63b1-44c0-994f-79adcac47a25" valueTypeId="686d0217-dac6-4fae-8cab-3aef017395c2"/>
+    <managerType typeId="5558bfb0-9bee-4dc5-81bc-34327fd6e8d8" valueTypeId="650b826f-7c1e-421c-ba71-bc8dd72e61e6"/>
+    <recordSetType typeId="c3fea141-79e3-4996-aec7-24a69b61806a" valueTypeId="7c0051bd-9b94-4ed4-91ce-d9eb678bdc6c"/>
+    <recordKeyType typeId="7586edec-e652-4840-a2dd-5b6a3f2bdd15" valueTypeId="70915f1d-84fa-4800-8baf-bad24b3e2525"/>
+    <recordType typeId="2ef6ef91-a7e4-47d3-bf75-299abfc0db09" valueTypeId="b52178eb-d460-4a1e-9a54-333f8ccada96"/>
+    <recordManagerType typeId="9001efe9-193a-4807-b941-291d9783b1ae" valueTypeId="b864524f-c79c-4da4-bf49-096b7c35e549"/>
+  </producedTypes>
+  <name>ЦеныНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9edff088-4333-4045-aa4b-9dee24f7c1c8">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="68d2c6da-a4c5-4e5f-a1f2-e9d05430921a">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
